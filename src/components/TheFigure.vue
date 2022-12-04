@@ -1,5 +1,5 @@
 <script setup>
-
+import FavButton from './FavButton.vue';
 
 defineProps({
     title: {
@@ -18,9 +18,10 @@ defineProps({
         type: String,
         default: 'Sin alt'
     },
+    item: Number
 })
 
-
+const emit = defineEmits(['toggleFav'])
 </script>
 
 <template>
@@ -28,9 +29,9 @@ defineProps({
         <img :src="`../src/assets/imgs/${src}`" loading="lazy" width="600" height="400" alt="alt">
         <figcaption> {{ title }} </figcaption>
         <span class="location"><v-icon name="oi-location" /> {{ location }} </span>
-        <div class="fav-button">
-            <v-icon class="fav-icon" name="bi-heart" />
-        </div>
+        <FavButton 
+        :item="item"
+        />
     </figure>
 </template>
 
@@ -85,6 +86,10 @@ figure:hover > img{
 
 figure:hover > figcaption, figure:hover > .fav-button, figure:hover > .location{
     opacity: 1;
+}
+
+.red{
+    color: #ff0000;
 }
 
 </style>
