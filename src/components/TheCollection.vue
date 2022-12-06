@@ -1,7 +1,21 @@
 <script setup>
 import TheFigure from './TheFigure.vue';
 import COLLECTION from '@/contentData/collection.js'
+import TheModal from './TheModal.vue';
+import { ref } from 'vue';
 
+const isOpened = ref(false)
+
+const data = ref({})
+
+function openModal(item){
+    isOpened.value = true
+    data.value = item
+}
+
+function closeModal(){
+    isOpened.value = false
+}
 </script>
 
 <template>
@@ -14,31 +28,18 @@ import COLLECTION from '@/contentData/collection.js'
         :alt="item.alt"
         :location="item.location"
         :item="item.id"
+        @openModal="openModal(item)" 
         />
     </div>
-    <div class="modal">
-        <div class="wrapper-img">
-            <img src="@/assets/imgs/lanzarote/lz-1.webp" alt="">
-        </div>
-        <div class="wrapper-text">
-            <h2>Título por defecto</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim excepturi 
-                facere voluptas nam natus nihil cum quam neque quisquam odio nulla impedit, ex modi laborum cumque quo nostrum repellat.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim excepturi 
-                facere voluptas nam natus nihil cum quam neque quisquam odio nulla impedit, ex modi laborum cumque quo nostrum repellat.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim excepturi 
-                facere voluptas nam natus nihil cum quam neque quisquam odio nulla impedit, ex modi laborum cumque quo nostrum repellat.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim excepturi 
-                facere voluptas nam natus nihil cum quam neque quisquam odio nulla impedit, ex modi laborum cumque quo nostrum repellat.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim excepturi 
-                facere voluptas nam natus nihil cum quam neque quisquam odio nulla impedit, ex modi laborum cumque quo nostrum repellat.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim excepturi 
-                facere voluptas nam natus nihil cum quam neque quisquam odio nulla impedit, ex modi laborum cumque quo nostrum repellat.
-            </p>
-            <span class="location">LOCALIZACIÓN</span>
-        </div>
-    </div>
+    <TheModal
+    :modal="isOpened"
+    :title="data.title"
+    :description="data.description"
+    :src="data.src"
+    :location="data.location"
+    :item="data.id"
+    @closeModal="closeModal"
+    />
 </template>
 
 <style scoped>
@@ -46,6 +47,14 @@ import COLLECTION from '@/contentData/collection.js'
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+}
+
+
+@media screen and (min-width: 500px){
+    .wrapper-collection{
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 1rem;
+    }
 }
 
 .modal{
@@ -58,29 +67,73 @@ import COLLECTION from '@/contentData/collection.js'
     background-color: #fafafaf0;
     text-align: center;
     display: flex;
+    flex-direction: column;
 }
 
+
 .modal .wrapper-img img{
-    width: 100vh;
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    background-color: #cacaca;
 }
 
 .modal .wrapper-img{
-    width: 100%;
+    position: relative;
+    padding: 0;
+    margin-top: 2rem;
 }
 .modal .wrapper-text{
     width: 100%;
-    padding: 1rem;
+    padding: 2rem 0;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-@media screen and (min-width: 500px){
-    .wrapper-collection{
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    padding: 1rem;
-    }
+.modal .title{
+    color: #20335d;
+    
 }
 
+.modal .description{
+    line-height: 1.5;
+    font-size: 1em;
+    
+}
+
+.modal .location{
+    display: inline-block;
+    text-decoration: none;
+    color: #42b882;
+    font-weight: bold;
+}
+.modal .location:hover{
+    border-bottom: 2px solid #42b882;
+}
+
+.fav-button{
+    opacity: 1;
+    position: absolute;
+    right: 5%;
+    top: 7.5%;
+    cursor: pointer;
+}
+.btn-close{
+    position: absolute;
+    right: 2%;
+}
+@media screen and (min-width: 1300px){
+    .modal{
+        flex-direction: row;
+    }
+    .modal .wrapper-img img{
+        height: 100%;
+        width: auto;
+        background-color: #cacaca;
+    }
+    .modal .wrapper-img{
+        width: 100%;
+        padding: 2rem;
+        margin-top: 0;
+    }
+}
 </style>

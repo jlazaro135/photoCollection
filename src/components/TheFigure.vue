@@ -1,7 +1,8 @@
 <script setup>
 import FavButton from './FavButton.vue';
 
-defineProps({
+
+const props = defineProps({
     title: {
         type: String,
         default: 'LOREM IPSUM'
@@ -21,11 +22,13 @@ defineProps({
     item: Number
 })
 
-const emit = defineEmits(['toggleFav'])
+
+
+const emit = defineEmits(['openModal'])
 </script>
 
 <template>
-    <figure>
+    <figure @click="emit('openModal', 'item')" :item="item">
         <img :src="`../src/assets/imgs/${src}`" loading="lazy" width="600" height="400" alt="alt">
         <figcaption> {{ title }} </figcaption>
         <span class="location"><v-icon name="oi-location" /> {{ location }} </span>

@@ -5,9 +5,9 @@ import App from './App.vue'
 import router from './router'
 
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { BiHeart, MdCollectionsOutlined, HiHome, BiHeartFill, OiLocation} from "oh-vue-icons/icons";
+import { BiHeart, MdCollectionsOutlined, HiHome, BiHeartFill, OiLocation, IoCloseOutline} from "oh-vue-icons/icons";
 
-addIcons(BiHeart, MdCollectionsOutlined, HiHome, BiHeartFill, OiLocation);
+addIcons(BiHeart, MdCollectionsOutlined, HiHome, BiHeartFill, OiLocation, IoCloseOutline);
 
 import './assets/main.css'
 
