@@ -1,13 +1,21 @@
 <script setup>
 import { RouterLink} from 'vue-router'
+
+import {useBackgroundHomeStore} from '@/stores/isHome.js'
+import {onMounted, onUnmounted} from 'vue';
+import { storeToRefs } from 'pinia';
+
+
+const useIsHome = useBackgroundHomeStore();
+const {isHome} = storeToRefs(useIsHome);
+
+onMounted(() => isHome.value = true)
+onUnmounted(() => isHome.value = false)
 </script>
 
 <template>
-    <div class="wrapper-img">
-        <img src="@/assets/imgs/lanzarote/lz-12.webp" width="600" height="400" alt="background">
-    </div>
     <div class="wrapper-home">
-        <h1>Colección de memorias gráficas</h1>
+        <h1>FRONTEND BACKPACKER</h1>
         <p>
             Bienvenido/a a este espacio personal dedicado a compartir mi visión particular del mundo a través de la fotografía. 
             Mi nombre es Jesús, soy desarrollador web y este proyecto nace con el principal objetivo de seguir mejorando mis habilidades como <b>desarrollador "front end"</b>. 
@@ -18,39 +26,30 @@ import { RouterLink} from 'vue-router'
 </template>
 
 <style scoped>
+
 .wrapper-home{
-    margin: 2em auto;
+    margin: auto;
     text-align: center;
     max-width: 1000px;
-    padding: 0 1rem;
+    padding: 1.5rem;
+    color: #ffffff;
+    border: 1px solid #fff;
+    width: 90%;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
 }
-.wrapper-img{
-    max-height: 230px;
-    overflow: hidden;
-    position: relative;
-    background-color: #cacaca;
-}
-.wrapper-img:before{
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: rgb(87,87,87);
-    background: linear-gradient(90deg, rgba(87,87,87,0.7) 0%, rgba(115,115,115,0.3) 50%, rgba(87,87,87,0.7) 100%);
-    z-index: 1;
-}
-img{
-    width: 100%;
-    height: auto;
-}
+
+
 h1{
     margin: 0 auto;
-    text-align: center
+    text-align: center;
+    font-size: clamp(24px, 2.5vw, 50px);
 }
 p{
     text-align: center;
     line-height: 1.5;
     font-size: 1.2rem;
+    font-size: clamp(16px, 1.2vw, 28px);
 }
 
 a{

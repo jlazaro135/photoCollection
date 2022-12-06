@@ -74,6 +74,7 @@ const emit = defineEmits(['closeModal'])
     text-align: center;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 

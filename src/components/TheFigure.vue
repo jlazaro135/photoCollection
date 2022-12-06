@@ -1,7 +1,6 @@
 <script setup>
 import FavButton from './FavButton.vue';
 
-
 const props = defineProps({
     title: {
         type: String,

@@ -11,11 +11,17 @@ const data = ref({})
 function openModal(item){
     isOpened.value = true
     data.value = item
+    let body = document.body
+    body.style.overflowY = 'hidden'
+    body.style.paddingRight = '17px'
 }
 
 function closeModal(){
     isOpened.value = false
+    let body = document.body
+    body.removeAttribute('style')
 }
+
 </script>
 
 <template>
