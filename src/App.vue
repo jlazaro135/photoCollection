@@ -1,6 +1,7 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import {useBackgroundHomeStore} from '@/stores/isHome.js'
+import TheMenu from './components/TheMenu.vue';
 
 const useIsHome = useBackgroundHomeStore()
 
@@ -12,14 +13,7 @@ const useIsHome = useBackgroundHomeStore()
     <div class="container">
       <header>
         <img alt="Vue logo" class="logo" src="@/assets/jlr.webp" width="125" />
-
-        <div class="wrapper-menu">
-          <nav class="menu">
-            <RouterLink to="/"><v-icon name="hi-home" /> Incio</RouterLink>
-            <RouterLink to="/collection"> <v-icon name="md-collections-outlined" /> Colección</RouterLink>
-            <RouterLink to="/favs"><v-icon name="bi-heart" /> Favoritos</RouterLink>
-          </nav>
-        </div>
+        <TheMenu />
       </header>
     </div>
   <RouterView />
@@ -50,13 +44,4 @@ header {
   padding: 1rem;
 }
 
-.menu{
-  display: flex;
-  gap: 1rem;
-}
-
-a{
-  color: #20335d;
-  text-decoration: none;
-}
 </style>
