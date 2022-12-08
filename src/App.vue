@@ -1,7 +1,6 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import {useBackgroundHomeStore} from '@/stores/isHome.js'
-import TheContainer from './components/TheContainer.vue';
 import TheHeader from './components/TheHeader.vue';
 import { storeToRefs } from 'pinia';
 

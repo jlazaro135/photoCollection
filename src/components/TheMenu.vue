@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink } from 'vue-router'
 import {useFavStore} from '@/stores/fav.js'
 import {useBackgroundHomeStore} from '@/stores/isHome.js'
 import { storeToRefs } from 'pinia';

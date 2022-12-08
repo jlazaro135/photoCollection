@@ -25,7 +25,6 @@ function toggleFav(e){
     }
     favs.value = [...favs.value, props.item]
     favsObjects.value = [...favsObjects.value, COLLECTION.find(obj => obj['id'] === props.item)]
-    console.log(favsObjects.value)
 }
 
 function isFav(){

@@ -12,7 +12,6 @@ const props = defineProps({
     },
     src: {
         type: String,
-        default: 'blabaaa'
     },
     alt: {
         type: String,

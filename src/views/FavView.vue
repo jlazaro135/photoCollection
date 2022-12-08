@@ -1,21 +1,11 @@
 <script setup>
-import TheCollection from '@/components/TheCollection.vue'
-import COLLECTION from '@/contentData/collection.js'
-import TheContainer from '../components/TheContainer.vue';
+import TheFavoritesVue from '../components/TheFavorites.vue';
 </script>
 
 <template>
-    <TheContainer>
-        <TheCollection 
-        :collection="COLLECTION"
-        :isCollection=false
-        />
-    </TheContainer>
+    <TheFavoritesVue />
 </template>
 
 <style scoped>
-.container{
-    max-width: 1400px;
-    margin: 0 auto;
-}
+
 </style>
