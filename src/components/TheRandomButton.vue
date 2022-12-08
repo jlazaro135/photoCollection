@@ -36,8 +36,7 @@ function closeModal(){
 
 function getRandomPicture(){
     let collectionFiltered = filterFav(COLLECTION)
-    let randomId = getRandomInt(1, COLLECTION.length)
-    console.log(randomId)
+    let randomId = randomItem(collectionFiltered)
     return randomImg.value = collectionFiltered.find(obj => obj['id'] === randomId)
 }
 
@@ -45,9 +44,10 @@ function filterFav(arr){
     return arr.filter(item => !favs.value.includes(item.id))
 }
 
-function getrandomImg(id){
-    let check = randomImg.value = collectionFiltered.find(obj => obj['id'] === id)
-    if(check) return check
+function randomItem(items){
+    console.log(items) 
+    console.log(items[Math.floor(Math.random()*items.length)].id) 
+    return items[Math.floor(Math.random()*items.length)].id
 }
 
 </script>
