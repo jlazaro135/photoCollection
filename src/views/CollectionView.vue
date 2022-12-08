@@ -1,11 +1,16 @@
 <script setup>
 import TheCollection from '@/components/TheCollection.vue'
+import COLLECTION from '@/contentData/collection.js'
+import TheContainer from '../components/TheContainer.vue';
 </script>
 
 <template>
-    <div class="container">
-        <TheCollection />
-    </div>
+    <TheContainer>
+        <TheCollection 
+        :collection="COLLECTION"
+        :isCollection=true
+        />
+    </TheContainer>
 </template>
 
 <style scoped>

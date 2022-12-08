@@ -22,7 +22,6 @@ const props = defineProps({
 })
 
 
-
 const emit = defineEmits(['openModal'])
 </script>
 
@@ -51,29 +50,21 @@ figure{
     background-color: #cacaca;
 }
 
-figcaption, .fav-button, .location{
-    opacity: 0;
+figcaption, .location{
+    opacity: 1;
     position: absolute;
     bottom: 5%;
     left: 3%;
     color: #fff;
     cursor: pointer;
+    background-color: #00000030;
+    padding: 0.2rem;
 }
 
 .location{
     left: auto;
     right: 3%;
 }
-.fav-button{
-    bottom: auto;
-    left: auto;
-    top: 5%;
-    right: 3%;
-    padding: 0.5em;
-    background-color: #fafafa;
-    border-radius: 5px;
-}
-
 .fav-icon{
     color: #000;
 }
@@ -90,8 +81,12 @@ figure:hover > figcaption, figure:hover > .fav-button, figure:hover > .location{
     opacity: 1;
 }
 
-.red{
-    color: #ff0000;
+@media screen and (min-width: 1024px){
+    figcaption, .location{
+        opacity: 0;
+        background-color: transparent;
+        padding: 0;
+    }
 }
 
 </style>

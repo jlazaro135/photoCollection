@@ -1,6 +1,5 @@
 <script setup>
 import TheFigure from './TheFigure.vue';
-import COLLECTION from '@/contentData/collection.js'
 import TheModal from './TheModal.vue';
 import { ref } from 'vue';
 
@@ -22,12 +21,18 @@ function closeModal(){
     body.removeAttribute('style')
 }
 
+defineProps({
+    collection: Array,
+    favorites: Array,
+    isCollection: Boolean
+})
+
 </script>
 
 <template>
     <div class="wrapper-collection">
         <TheFigure 
-        v-for="item in COLLECTION"
+        v-for="item in isCollection ? collection : favorites"
         :key="item.id"
         :title="item.title"
         :src="item.src"
@@ -59,7 +64,7 @@ function closeModal(){
 @media screen and (min-width: 500px){
     .wrapper-collection{
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     }
 }
 
