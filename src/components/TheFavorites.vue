@@ -19,19 +19,15 @@ const {favsObjects} = storeToRefs(useFav)
             <h2>No tienes ninguna imagen en favoritos </h2>
             <div class="text-search">
                 <p>Mira en la <RouterLink to="/collection">colección</RouterLink> o bien consigue una al azar haciendo clic en el siguiente botón:</p>
-                <TheRandomButton 
-                textButton="¡Dame una foto!"
-                />
             </div>
         </div>
+        <TheRandomButton 
+        :textButton= "favsObjects.length > 0 ? '¡Dame otra foto!': '¡Dame una foto!' "
+        />
         <TheCollection 
         v-if="favsObjects.length > 0"
         :favorites="favsObjects" 
         :isCollection=false
-        />
-        <TheRandomButton 
-        v-if="favsObjects.length > 0"
-        textButton="¡Dame otra foto!"
         />
     </TheContainer>
 </template>

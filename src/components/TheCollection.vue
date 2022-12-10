@@ -12,7 +12,7 @@ function openModal(item){
     data.value = item
     let body = document.body
     body.style.overflowY = 'hidden'
-    body.style.paddingRight = '17px'
+    body.style.paddingRight = '17px'  
 }
 
 function closeModal(){
@@ -20,6 +20,7 @@ function closeModal(){
     let body = document.body
     body.removeAttribute('style')
 }
+
 
 defineProps({
     collection: Array,
@@ -39,7 +40,8 @@ defineProps({
         :alt="item.alt"
         :location="item.location"
         :item="item.id"
-        @openModal="openModal(item)" 
+        @openModal="openModal(item)"
+        @favPic="test()"
         />
     </div>
     <TheModal

@@ -1,6 +1,5 @@
 <script setup>
 import COLLECTION from '@/contentData/collection.js'
-import {getRandomInt} from '@/utils/utils.js'
 import { ref } from 'vue';
 import TheModal from './TheModal.vue';
 import {useFavStore} from '@/stores/fav.js'
@@ -20,7 +19,9 @@ const randomImg = ref({})
 
 const isOpened = ref(false)
 
+
 function openModal(item){
+    if(item === false)return
     isOpened.value = true
     randomImg.value = item
     let body = document.body
@@ -36,6 +37,7 @@ function closeModal(){
 
 function getRandomPicture(){
     let collectionFiltered = filterFav(COLLECTION)
+    if (collectionFiltered.length === 0) return false
     let randomId = randomItem(collectionFiltered)
     return randomImg.value = collectionFiltered.find(obj => obj['id'] === randomId)
 }
@@ -45,15 +47,14 @@ function filterFav(arr){
 }
 
 function randomItem(items){
-    console.log(items) 
-    console.log(items[Math.floor(Math.random()*items.length)].id) 
     return items[Math.floor(Math.random()*items.length)].id
 }
 
 </script>
 
 <template>
-    <button @click="openModal(getRandomPicture())">{{textButton}}</button>
+    <button v-if="getRandomPicture" @click="openModal(getRandomPicture())">{{textButton}}</button>
+    <h3 v-else>Wow! Has seleccionado todas las fotos como favoritas 🎉 🎉 </h3>
     <TheModal
     :modal="isOpened"
     :title="randomImg.title"

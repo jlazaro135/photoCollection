@@ -29,11 +29,14 @@ const props = defineProps({
         type: String,
         default: 'Mira la localización exacta'
     },
-    item: Number
+    item: Number,
+    closeModal: Function
 })
 
 
 const emit = defineEmits(['closeModal'])
+
+
 
 </script>
 
@@ -44,6 +47,7 @@ const emit = defineEmits(['closeModal'])
             <FavButton 
             :item="item"
             class="fav-button"
+            @click="closeModal"
             />
         </div>
         <div class="wrapper-text">
