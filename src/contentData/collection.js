@@ -5,14 +5,26 @@ const COLLECTION = [
         title: 'Entrada Jameos del Agua',
         location: 'Lanzarote, España',
         src: 'lanzarote/lz-1.webp',
-        alt: 'jameos-agua'
+        alt: 'jameos-agua',
+        description: `Los Jameos son oquedades que existen en un túnel volcánico de 6 km situado en el norte de la isla de Lanzarote, 
+        con dirección este-oeste. El más representativo son los Jameos del Agua por la adaptación como centro artístico 
+        y cultural de la mano del artista y arquitecto local César Manrique, siendo posiblemente una de sus obras más 
+        representativas para visitar en la isla.
+        <br><br>
+        El cáctus está muy presente en la obra de Manrique y ya en la entrada a este espacio se puede disfrutar de algunos ejemplares`,
+        googlemap: 'https://goo.gl/maps/vFdoXxzBcsdUT8Kw8',
     },
     {
         id: 2,
         title: 'Jameo Grande',
         location: 'Lanzarote, España',
         src: 'lanzarote/lz-2.webp',
-        alt: 'jameos-agua'
+        alt: 'jameos-agua',
+        description: `El Jameo Grande es el principal atractivo de Los Jameos del Agua. En el interior hay un lago en el que habitan los famosos cangrejos 
+        ciegos o 'jameitos'. Se da la circunstancia de que solo vive en este lugar, lo que le ha convertido en un símbolo de Lanzarote.
+        <br><br>
+        Si te apetece conocer más a fondo a este crustáceo único en el mundo te dejo el siguiente enlace: <a href="https://www3.gobiernodecanarias.org/medusa/wiki/index.php?title=Cangrejo_ciego#:~:text=El%20cangrejito%20ciego%20de%20los,blanco%2C%20ya%20que%20es%20albino." target="_blank">Cangrejo ciego de Lanzarote</a`,
+        googlemap: 'https://goo.gl/maps/vFdoXxzBcsdUT8Kw8',
     },
     {
         id: 3,

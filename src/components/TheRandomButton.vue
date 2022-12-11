@@ -6,7 +6,7 @@ import {useFavStore} from '@/stores/fav.js'
 import { storeToRefs } from 'pinia';
 
 const useFav = useFavStore()
-const {favsObjects, favs} = storeToRefs(useFav)
+const {favs} = storeToRefs(useFav)
 
 defineProps({
     collection: Array,

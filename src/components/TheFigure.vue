@@ -44,6 +44,7 @@ img{
 }
 
 figure{
+    user-select: none;
     position: relative;
     margin: 0;
     cursor: zoom-in;

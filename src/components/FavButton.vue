@@ -21,10 +21,14 @@ function toggleFav(e){
         favs.value.splice(index, 1)
         let indexObject = favsObjects.value.indexOf(favsObjects.value.find(obj => obj['id'] === props.item))
         favsObjects.value.splice(indexObject, 1)
+        localStorage.setItem('photoIds', JSON.stringify(favs.value))
+        localStorage.setItem('photoObjects', JSON.stringify(favsObjects.value))
         return
     }
     favs.value = [...favs.value, props.item]
     favsObjects.value = [...favsObjects.value, COLLECTION.find(obj => obj['id'] === props.item)]
+    localStorage.setItem('photoIds', JSON.stringify(favs.value))
+    localStorage.setItem('photoObjects', JSON.stringify(favsObjects.value))
 }
 
 function isFav(){

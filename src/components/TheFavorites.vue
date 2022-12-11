@@ -18,7 +18,7 @@ const {favsObjects} = storeToRefs(useFav)
             </div>
             <h2>No tienes ninguna imagen en favoritos </h2>
             <div class="text-search">
-                <p>Mira en la <RouterLink to="/collection">colección</RouterLink> o bien consigue una al azar haciendo clic en el siguiente botón:</p>
+                <p>Mira en la <RouterLink to="/collection">colección</RouterLink> o mira una al azar haciendo clic en el siguiente botón:</p>
             </div>
         </div>
         <TheRandomButton 

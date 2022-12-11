@@ -11,11 +11,11 @@ const props = defineProps({
     },
     description:{
         type: String,
-        default: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim excepturi facere voluptas nam natus nihil cum quam neque quisquam odio nulla impedit, ex modi laborum cumque quo nostrum repellat.'
+        default: 'Sorry, no hay descripción 😥'
     },
     location:{
         type: String,
-        default: 'Localizacón, Worldwide'
+        default: 'Localización sin definir'
     },
     googlemap:{
         type: String,
@@ -52,13 +52,13 @@ const emit = defineEmits(['closeModal'])
         </div>
         <div class="wrapper-text">
             <h2 class="title">{{title}}</h2>
-            <p class="description">
-                {{description}}
+            <p class="description" v-html="description">
+
             </p>
-            <p>
+            <p class="description">
                 {{ locationPara }}
             </p>
-            <a class="location" :href="googlemap"><v-icon name="oi-location" /> {{location}} </a>
+            <a class="location" :href="googlemap" target="_blank"><v-icon name="oi-location" /> {{location}} </a>
         </div>
         <div class="btn-close" @click="emit('closeModal')">
             <v-icon name="io-close-outline" />
@@ -99,16 +99,19 @@ const emit = defineEmits(['closeModal'])
     padding: 2rem 0;
     max-width: 1000px;
     margin: 0 auto;
+    text-align: left;
 }
 
 .modal .title{
     color: #20335d;
+    text-align: center;
     
 }
 
 .modal .description{
     line-height: 1.5;
     font-size: 1em;
+    text-align: left;
     
 }
 
@@ -117,6 +120,7 @@ const emit = defineEmits(['closeModal'])
     text-decoration: none;
     color: #42b882;
     font-weight: bold;
+    text-align: left;
 }
 .modal .location:hover{
     border-bottom: 2px solid #42b882;

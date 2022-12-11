@@ -51,6 +51,7 @@ defineProps({
     :src="data.src"
     :location="data.location"
     :item="data.id"
+    :googlemap="data.googlemap"
     @closeModal="closeModal"
     />
 </template>
