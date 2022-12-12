@@ -295,6 +295,150 @@ const COLLECTION = [
         `,
         googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
     },
+    {
+        id: 30,
+        title: 'Puente de Las Bolas',
+        location: 'Utah, EEUU',
+        src: 'usa/usa-30.webp',
+        alt: 'puente',
+        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
+        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        `,
+        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+    },
+    {
+        id: 30,
+        title: 'Puente de Las Bolas',
+        location: 'Utah, EEUU',
+        src: 'usa/usa-30.webp',
+        alt: 'puente',
+        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
+        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        `,
+        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+    },
+    {
+        id: 31,
+        title: 'Puente de Las Bolas',
+        location: 'Utah, EEUU',
+        src: 'usa/usa-31.webp',
+        alt: 'puente',
+        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
+        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        `,
+        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+    },
+    {
+        id: 32,
+        title: 'Puente de Las Bolas',
+        location: 'Utah, EEUU',
+        src: 'usa/usa-32.webp',
+        alt: 'puente',
+        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
+        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        `,
+        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+    },
+    {
+        id: 40,
+        title: 'Puente de Las Bolas',
+        location: 'Utah, EEUU',
+        src: 'usa/usa-40.webp',
+        alt: 'puente',
+        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
+        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        `,
+        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+    },
+    {
+        id: 33,
+        title: 'Puente de Las Bolas',
+        location: 'Utah, EEUU',
+        src: 'usa/usa-33.webp',
+        alt: 'puente',
+        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
+        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        `,
+        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+    },
+    {
+        id: 34,
+        title: 'Puente de Las Bolas',
+        location: 'Estambul, Turquía',
+        src: 'tk/tk-37.webp',
+        alt: 'puente',
+        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
+        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        `,
+        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+    },
+    {
+        id: 35,
+        title: 'Puente de Las Bolas',
+        location: 'Estambul, Turquía',
+        src: 'tk/tk-38.webp',
+        alt: 'puente',
+        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
+        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        `,
+        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+    },
+    {
+        id: 36,
+        title: 'Puente de Las Bolas',
+        location: 'Estambul, Turquía',
+        src: 'tk/tk-39.webp',
+        alt: 'puente',
+        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
+        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        `,
+        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+    },
+    {
+        id: 37,
+        title: 'Puente de Las Bolas',
+        location: 'Utah, EEUU',
+        src: 'usa/usa-30.webp',
+        alt: 'puente',
+        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
+        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        `,
+        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+    },
+    {
+        id: 38,
+        title: 'Puente de Las Bolas',
+        location: 'Utah, EEUU',
+        src: 'ir/ir-35.webp',
+        alt: 'puente',
+        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
+        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        `,
+        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+    },
+    {
+        id: 39,
+        title: 'Puente de Las Bolas',
+        location: 'Utah, EEUU',
+        src: 'gr/gr-34.webp',
+        alt: 'puente',
+        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
+        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        `,
+        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+    },
+    {
+        id: 40,
+        title: 'Puente de Las Bolas',
+        location: 'Barcelona, España',
+        src: 'bcn/bcn-36.webp',
+        alt: 'puente',
+        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
+        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        `,
+        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+    },
+
 ]
 
 export default COLLECTION;
