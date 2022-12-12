@@ -56,7 +56,7 @@ const COLLECTION = [
         src: 'lanzarote/lz-5.webp',
         alt: 'montaña-bermeja',
         description: `Es una de las montañas más emblemáticas de La Graciosa, está situada en el extremo septentrional de la isla 
-        y resalta especialemente de entre el paisaje de la isla por sus tonos cobrizos. El ascenso a esta montaña de unos 160 metros es casi obligatoria si visitas la isla,
+        y resalta especialemente entre el paisaje de la isla por sus tonos cobrizos. El ascenso a esta montaña de unos 160 metros es casi obligatoria si visitas la isla,
         desde lo más alto se puede divisar prácticamente toda la isla y una vista única de las islas Montaña Clara, Roque del Oeste, Alegranza o Roque del Este, todas ellas, junto con La Graciosa, pertenecen al
         <a href="https://es.wikipedia.org/wiki/Archipi%C3%A9lago_Chinijo" target="_blank">Archipiélgao de Chinijo</a> .`,
         googlemap: 'https://goo.gl/maps/dRkmCoGviLdbBD8T9',
@@ -297,102 +297,111 @@ const COLLECTION = [
     },
     {
         id: 30,
-        title: 'Puente de Las Bolas',
+        title: 'Monument Valley',
         location: 'Utah, EEUU',
         src: 'usa/usa-30.webp',
-        alt: 'puente',
-        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
-        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        alt: 'valley',
+        description: `Monument Valley es un parque nacional situado en el suroeste de Estados Unidos, en la frontera entre Arizona y Utah. Es conocido por sus impresionantes formaciones rocosas, que han sido utilizadas 
+        como escenario en numerosas películas, videojuegos o anuncios (¿no te viene a la cabeza el de Marlboro?). La zona es hogar de la tribu navajo, conocidos por sus habilidades en la tejeduría y la confección de joyería, aunque en 
+        las últimas décadas han sido precursores de grandes casinos en esa zona del país. 
         `,
-        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
-    },
-    {
-        id: 30,
-        title: 'Puente de Las Bolas',
-        location: 'Utah, EEUU',
-        src: 'usa/usa-30.webp',
-        alt: 'puente',
-        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
-        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
-        `,
-        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+        googlemap: 'https://goo.gl/maps/rVTJ3qi6sUeuiFRn7',
     },
     {
         id: 31,
-        title: 'Puente de Las Bolas',
-        location: 'Utah, EEUU',
+        title: 'Grand Canyon',
+        location: 'Arizona, EEUU',
         src: 'usa/usa-31.webp',
-        alt: 'puente',
-        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
-        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        alt: 'canyon',
+        description: `
+        El Gran Cañón de Arizona es uno de los lugares más impresionantes de Estados Unidos. 
+        Se encuentra en el estado de Arizona y es uno de los parques nacionales más visitados del país. 
+        El cañón tiene una profundidad de más de 1.6 km y una longitud de más de 446 km. Es el resultado de millones de años de erosión por parte del río Colorado. 
+        Las paredes del cañón están formadas por capas de roca de diferentes edades y colores, lo que le da a la zona un aspecto único y espectacular. 
+        Las actividades populares en el parque incluyen senderismo, rafting y observación de la fauna y la flora locales. 
         `,
-        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+        googlemap: 'https://goo.gl/maps/eZiApQN8jD1VrmVA9',
     },
     {
         id: 32,
-        title: 'Puente de Las Bolas',
-        location: 'Utah, EEUU',
+        title: 'San Francisco Bay',
+        location: 'San Francisco, EEUU',
         src: 'usa/usa-32.webp',
         alt: 'puente',
-        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
-        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        description: `
+        "El invierno más frío que he pasado fue un verano en San Francisco". Esta frase atribuida a Mark Twain puede parecer una exageración, pero fue lo que experimentamos
+        durante la visita a la ciudad a pesar de estar en pleno agosto. Ese clima se palpa especialmente en la bahía de San Francisco, un lugar conocido, sobre todo, por la isla de Alcatraz, la cual que alberga una antigua cárcel de alta seguridad
+        por la que pasaron los delicuentes más peligrosos del país, como Al Capone o George Barnes.  
         `,
-        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+        googlemap: 'https://goo.gl/maps/ZWGRHeqM56GeL9QU6',
     },
     {
         id: 40,
-        title: 'Puente de Las Bolas',
-        location: 'Utah, EEUU',
+        title: 'Luz y sombra',
+        location: 'Isla de Alcatraz, EEUU',
         src: 'usa/usa-40.webp',
         alt: 'puente',
-        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
-        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
-        `,
-        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+        description: `
+        El estilo de vida en la cárcel de Alcatraz era duro y rígido. Los reclusos pasaban la mayor parte del día en sus celdas pequeñas y 
+        sin ventanas, donde dormían en camas de hierro y tenían un inodoro y un lavabo. Se les permitía salir de sus celdas durante unas pocas horas al día 
+        para realizar actividades recreativas como leer, escribir cartas o jugar al ajedrez, pero siempre bajo estricta supervisión y en grupos pequeños. 
+        Las comidas eran básicas y se servían en bandejas de metal en las celdas. 
+        La disciplina era estricta y cualquier infracción podía llevar a castigos severos, como la privación de visitas o la soledad en una celda aislada.`,
+        googlemap: 'https://goo.gl/maps/SB7S4GE2s16g6woH7',
     },
     {
         id: 33,
-        title: 'Puente de Las Bolas',
-        location: 'Utah, EEUU',
+        title: 'Cable city',
+        location: 'San Francisco, EEUU',
         src: 'usa/usa-33.webp',
-        alt: 'puente',
-        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
-        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        alt: 'cable',
+        description: `
+        El tranvía es uno de los elementos más reconocibles de San Francisco. Hoy día su uso es residual y enfocado sobre todo al turismo, pero hasta hace pocas décadas era el principal medio de transporte, 
+        inervando toda la ciudad.
+        Esta imagen está tomada en la zona norte de la ciudad, prácticamente al final del recorrido de esta línea de tranvía. En ella se puede
+        contemplar la isla de Alcatraz, que puede parecer cercana a la costa continental; nada más lejos de la realidad, hubo reclusos que intentaron escapar de la cárcel pero nunca alcazaron la costa, 
+        siendo 'tragados' por las fuertes corrientes de la Bahía... según la versión oficial, claro.
         `,
-        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+        googlemap: 'https://goo.gl/maps/Rru4ZTsuvJF6BivG6',
     },
     {
         id: 34,
-        title: 'Puente de Las Bolas',
-        location: 'Estambul, Turquía',
+        title: "Calma en Anatolia",
+        location: 'Eskişehir, Turquía',
         src: 'tk/tk-37.webp',
-        alt: 'puente',
-        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
-        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        alt: 'Eskişehir',
+        description: 
+        `
+        Turquía es un país de fuertes contrastes y ejemplo de convivencia entre modelos de vida antagónicos. Fuera de Estambul y sus 15 millones de habitantes, las ciudades del interior
+        llevan otro ritmo más tranquilo y pastueño, como es el caso de esta mediana ciudad, Eskişehir, ubicada a medio camino entre Estambul y la capital, Ankara.  
         `,
-        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+        googlemap: 'https://goo.gl/maps/jJjDcBPaHfoiDomC8',
     },
     {
         id: 35,
-        title: 'Puente de Las Bolas',
+        title: 'Galata Köprüsü',
         location: 'Estambul, Turquía',
         src: 'tk/tk-38.webp',
         alt: 'puente',
-        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
-        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        description: `
+        El puente de Galata une la zona antigua de la ciudad, Sultanahmet, con el distrito de Beyoğlu. En este puente se agolpan centeneres de pescadores con sus cañas y vendedores ambulantes de comida. Desde este puente
+        se puede divisar La Mezquita Azul o el Museo de Santa Sofía, antigua basílica ortodoxa, posteriormente convertida en mezquita y que se inauguro en el año 537, casi 1500 años lleva este emblemático monumento 
+        presidiendo la ciudad.
         `,
-        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+        googlemap: 'https://goo.gl/maps/xtZtX1nUrZkoYDpK8',
     },
     {
         id: 36,
-        title: 'Puente de Las Bolas',
+        title: "Istiklal's souls",
         location: 'Estambul, Turquía',
         src: 'tk/tk-39.webp',
-        alt: 'puente',
-        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
-        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        alt: 'calle',
+        description: `
+        Istiklal es la calle más concurrida de Estambul que desemboca en la emblemática plaza Taksim, centro neurálgico de esta megalópolis. Con una longitud de 1,6 km, es la calle comercial por antonomasia
+        de Estambul y por ella transita el famoso tranvía. Según diversas fuentes
+        hay días que el número de viadantes puede ascender hasta los 3 millones.
         `,
-        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+        googlemap: 'https://goo.gl/maps/fs6QEzGuDZnkvy8a9',
     },
     {
         id: 37,
