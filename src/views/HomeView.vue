@@ -40,7 +40,7 @@ onUnmounted(() => isHome.value = false)
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(3px);
     animation: wrapper 1s ease-in-out forwards;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 

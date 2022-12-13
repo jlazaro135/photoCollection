@@ -404,48 +404,46 @@ const COLLECTION = [
         googlemap: 'https://goo.gl/maps/fs6QEzGuDZnkvy8a9',
     },
     {
-        id: 37,
-        title: 'Puente de Las Bolas',
-        location: 'Utah, EEUU',
-        src: 'usa/usa-30.webp',
-        alt: 'puente',
-        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
-        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
-        `,
-        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
-    },
-    {
         id: 38,
-        title: 'Puente de Las Bolas',
-        location: 'Utah, EEUU',
+        title: 'Café en Darband',
+        location: 'Teherán, Irán',
         src: 'ir/ir-35.webp',
-        alt: 'puente',
-        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
-        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
-        `,
-        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+        alt: 'darband',
+        description: `
+        Darband es un barrio de la ciudad de Teherán. Se encuentra en las montañas al norte de la ciudad, a los pies del monte Tochal. Es conocido por sus cafés y restaurantes al aire libre, 
+        así como por sus senderos de montaña que ofrecen vistas panorámicas de la ciudad. También es un lugar popular para el senderismo y el 
+        picnic entre los habitantes de Teherán y un fantástico lugar para resguardarse del tórrido verano persa.`,
+        googlemap: 'https://goo.gl/maps/o4BWM4Bu94u5uWm28',
     },
     {
         id: 39,
-        title: 'Puente de Las Bolas',
-        location: 'Utah, EEUU',
+        title: 'Otoño en el Darro',
+        location: 'Granada, España',
         src: 'gr/gr-34.webp',
-        alt: 'puente',
-        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
-        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        alt: 'darro-',
+        description: `
+        Dejando a un lado el hecho de que soy 'granaíno', Granada es con seguridad una de las ciudades más bonitas de España. La Acera del Darro, resguardad por la Alhambra a un lado y el Albaicín por otro, es una de las
+        calles más conocidas de la ciudad. El río que por ella transita fue un recurso clave en la Granada musulmana, ya que suministraba agua a los palacios de la 
+        Alhambra. El río Darro discurre de norte a sur, quedando embovedado desde Plaza de Santa Ana hasta su desembocadura en el río Genil, privandonos, quizás, de un espectáctulo mayor a tenor 
+        de los recursos gráficos y pictóricos que muestran al río en convivencia con el entorno urbano.
+        <br><br>
+        Para saber más sobre este larguísimo proceso de embovedado, echa un vistazo a este artículo de El Independiente de Granada: <a href="https://www.elindependientedegranada.es/ciudadania/desembovedando-dauro" target="_blank">Desembovedando el Dauro</a>
         `,
-        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+        googlemap: 'https://goo.gl/maps/Ea72vqJFysZLGpoVA',
     },
     {
         id: 40,
-        title: 'Puente de Las Bolas',
+        title: 'Mitja Lluna',
         location: 'Barcelona, España',
         src: 'bcn/bcn-36.webp',
-        alt: 'puente',
-        description: `Puente que da acceso al Castillo de San Gabriel, en Arrecife. Toma ese nombre por las dos bolas que coronan cada columna. Su principal función era la de
-        proteger de defensa ante los ataques de los piratas. Hoy días es un apacible lugar donde los lugareños paran a pescar o incluso la gente más joven usa como trampolín durante los meses de verano. 
+        alt: 'mirador',
+        description: `
+        El Parc del Guinardó es de las zonas verdes más grandes de Barcelona. Esta imagen está tomada en el mirador Mitja Lluna y suele estar menos concurrido en 
+        comparación con el mirador vecino de El Turó de la Rovira, donde se encuentra los famosos <a href="http://www.bunkers.cat/es/" target="_blank">Bunkers del Carmel</a>, panorámica de 360 grados que se ha colado durante los últimos años en las guías de turismo como un 'must' a visitar.
+        Barcelona es bien conocida por su urbanismo modernista y su infinita oferta cultural, pero también cuenta con parajes naturales cercanos a la gran urbe como Collserola, la desembocadura del Llobregat, 
+        o la Serralada de la Marina que permite al residente escapar de los ritmos y tempos que suelen concurrir en estos enormes núcleos urbanos.
         `,
-        googlemap: 'https://goo.gl/maps/u4gfdy5U5xywPTtz6',
+        googlemap: 'https://goo.gl/maps/S2odinyUpxYTQWfWA',
     },
 
 ]
