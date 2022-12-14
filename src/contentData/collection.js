@@ -172,11 +172,11 @@ const COLLECTION = [
     },
     {
         id: 15,
-        title: 'Playa del Papagayo',
+        title: 'Papagayo',
         location: 'Lanzarote, España',
         src: 'lanzarote/lz-15.webp',
         alt: 'papagayo',
-        description: `La del Papagayo es una de las playas más reconocibles y recomendadas de toda la isla, pese a la dificultad de acceso. Además de disfrutar del baño o de actividades con buceo o snorkel, 
+        description: `La playa del Papagayo es una de las playas más reconocibles y recomendadas de toda la isla, pese a la dificultad de acceso. Además de disfrutar del baño o de actividades con buceo o snorkel, 
         la gente suele congregarse al atardecer para contemplar una de las puestas de sol más espectaculares del archipiélago canario.
         `,
         googlemap: 'https://goo.gl/maps/kBahwGaqeAru6u918',
@@ -190,7 +190,7 @@ const COLLECTION = [
     // },
     {
         id: 17,
-        title: 'Atardecer conejero',
+        title: 'Sunset',
         location: 'Playa del Papagayo, España',
         src: 'lanzarote/lz-17.webp',
         alt: 'atardecer-2',
@@ -211,7 +211,7 @@ const COLLECTION = [
     },
     {
         id: 19,
-        title: 'Corvus corax canariensis',
+        title: 'Corvux canariensis',
         location: 'Fuerteventura, España',
         src: 'fuerteventura/lz-19.webp',
         alt: 'cuervo',
@@ -330,7 +330,7 @@ const COLLECTION = [
         alt: 'puente',
         description: `
         "El invierno más frío que he pasado fue un verano en San Francisco". Esta frase atribuida a Mark Twain puede parecer una exageración, pero fue lo que experimentamos
-        durante la visita a la ciudad a pesar de estar en pleno agosto. Ese clima se palpa especialmente en la bahía de San Francisco, un lugar conocido, sobre todo, por la isla de Alcatraz, la cual que alberga una antigua cárcel de alta seguridad
+        durante la visita a la ciudad a pesar de estar en pleno agosto. Ese clima se palpa especialmente en la bahía de San Francisco, un lugar conocido, sobre todo por la isla de Alcatraz, la cual alberga una antigua cárcel de alta seguridad
         por la que pasaron los delicuentes más peligrosos del país, como Al Capone o George Barnes.  
         `,
         googlemap: 'https://goo.gl/maps/ZWGRHeqM56GeL9QU6',
