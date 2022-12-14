@@ -2,7 +2,7 @@
 const COLLECTION = [
     {
         id: 1,
-        title: 'Entrada Jameos del Agua',
+        title: 'Jameos del Agua',
         location: 'Lanzarote, España',
         src: 'lanzarote/lz-1.webp',
         alt: 'jameos-agua',
