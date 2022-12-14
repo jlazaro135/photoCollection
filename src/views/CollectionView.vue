@@ -1,4 +1,5 @@
 <script setup>
+
 import TheCollection from '@/components/TheCollection.vue'
 import COLLECTION from '@/contentData/collection.js'
 import TheContainer from '../components/TheContainer.vue';

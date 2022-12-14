@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 import {useFavStore} from '@/stores/fav.js'
 import {useBackgroundHomeStore} from '@/stores/isHome.js'
 import { storeToRefs } from 'pinia';
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, computed } from 'vue';
 
 const useFav = useFavStore()
 const {favs} = storeToRefs(useFav)
@@ -13,9 +13,9 @@ const {isHome} = storeToRefs(useIsHome)
 
 const isDesktop = ref(false)
 
-function favLength(){
+const favLength = computed(() => {
   return favs.value.length
-}
+})
 
 onMounted(()=> {
   isDesktop.value = window.screen.width > 992;
@@ -27,9 +27,6 @@ onMounted(()=> {
     isDesktop.value = false;
   })
 })
-
-
-
 </script>
 
 <template>
@@ -37,7 +34,7 @@ onMounted(()=> {
         <nav class="menu">
         <RouterLink to="/" :class="{'link-home': isHome}"><v-icon name="hi-home" /> Incio</RouterLink>
         <RouterLink to="/collection" :class="{'link-home': isHome}"> <v-icon name="md-collections-outlined" /> Colección</RouterLink>
-        <RouterLink to="/favs" :class="{'link-home': isHome}"><v-icon name="bi-heart" /> <span :class="{'hide': !isDesktop}"> Favoritos</span> <span class="fav-length" :class="favLength() ? '' : 'hide'">{{favLength()}}</span></RouterLink>
+        <RouterLink to="/favs" :class="{'link-home': isHome}"><v-icon name="bi-heart" /> <span :class="{'hide': !isDesktop}"> Favoritos</span> <span class="fav-length" :class="favLength ? '' : 'hide'">{{favLength}}</span></RouterLink>
         </nav>
     </div>
 </template>

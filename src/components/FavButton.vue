@@ -1,5 +1,7 @@
 <script setup>
+
 import { ref } from 'vue';
+import { computed } from '@vue/reactivity';
 import {useFavStore} from '@/stores/fav.js'
 import { storeToRefs } from 'pinia';
 import COLLECTION from '@/contentData/collection.js'
@@ -27,19 +29,22 @@ function toggleFav(e){
     }
     favs.value = [...favs.value, props.item]
     favsObjects.value = [...favsObjects.value, COLLECTION.find(obj => obj['id'] === props.item)]
+    isFav.value = favs.value.find(value => value === props.item)
     localStorage.setItem('photoIds', JSON.stringify(favs.value))
     localStorage.setItem('photoObjects', JSON.stringify(favsObjects.value))
 }
 
-function isFav(){
-    return favs.value.find(value => value === props.item)
-}
+
+const isFav  = computed(() => {
+    return favs.value.find(value => value === props.item)   
+})
+    
 
 </script>
 
 <template>
-    <div class="fav-button" :class="{'faved': isFav()}" @click="toggleFav($event)" :data-item="item">
-        <v-icon class="fav-icon" :class="{'red': isFav()}" :name="isFav() ? 'bi-heart-fill' : 'bi-heart'" />
+    <div class="fav-button" :class="{'faved': isFav}" @click="toggleFav($event)" :data-item="item">
+        <v-icon class="fav-icon" :class="{'red': isFav}" :name="isFav ? 'bi-heart-fill' : 'bi-heart'" />
     </div>
 </template>
 

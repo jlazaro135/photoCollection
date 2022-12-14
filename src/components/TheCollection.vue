@@ -41,7 +41,6 @@ defineProps({
         :location="item.location"
         :item="item.id"
         @openModal="openModal(item)"
-        @favPic="test()"
         />
     </div>
     <TheModal

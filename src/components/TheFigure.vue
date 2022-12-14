@@ -1,4 +1,5 @@
 <script setup>
+
 import FavButton from './FavButton.vue';
 
 const props = defineProps({
@@ -21,13 +22,13 @@ const props = defineProps({
 })
 
 
-const emit = defineEmits(['openModal', 'favPic'])
+const emit = defineEmits(['openModal'])
 
 </script>
 
 <template>
     <figure @click="emit('openModal', 'item')" :item="item">
-        <img :src="`../src/assets/imgs/${src}`" loading="lazy" width="600" height="400" alt="alt">
+        <img :src="`/imgs/${src}`" loading="lazy" width="600" height="400" alt="alt">
         <figcaption> {{ title }} </figcaption>
         <span class="location"><v-icon name="oi-location" /> {{ location }} </span>
         <FavButton 

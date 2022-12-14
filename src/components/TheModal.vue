@@ -36,18 +36,15 @@ const props = defineProps({
 
 const emit = defineEmits(['closeModal'])
 
-
-
 </script>
 
 <template>
     <div class="modal" :style="`display: ${props.modal ? 'flex' : 'none' }`">
         <div class="wrapper-img">
-            <img :src="`../src/assets/imgs/${src}`" alt="pic" width="600" height="400">
+            <img :src="`/imgs/${src}`" alt="pic" width="600" height="400">
             <FavButton 
             :item="item"
             class="fav-button"
-            @click="closeModal"
             />
         </div>
         <div class="wrapper-text">
