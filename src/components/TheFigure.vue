@@ -52,6 +52,7 @@ figure{
     background-color: #cacaca;
 }
 
+
 figcaption, .location{
     opacity: 1;
     position: absolute;
@@ -75,9 +76,6 @@ figure:hover{
     background-color: #000;
 }
 
-figure:hover > img{
-    opacity: 0.6;
-}
 
 figure:hover > figcaption, figure:hover > .fav-button, figure:hover > .location{
     opacity: 1;
@@ -89,6 +87,9 @@ figure:hover > figcaption, figure:hover > .fav-button, figure:hover > .location{
         background-color: transparent;
         padding: 0;
     }
+    figure:hover > img{
+    opacity: 0.6;
+}
 }
 
 </style>

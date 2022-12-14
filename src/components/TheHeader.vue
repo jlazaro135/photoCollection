@@ -1,4 +1,5 @@
 <script setup>
+
 import TheMenu from './TheMenu.vue';
 import {useBackgroundHomeStore} from '@/stores/isHome.js'
 import { storeToRefs } from 'pinia';
@@ -35,6 +36,7 @@ header{
 
 .header-transparent{
     background-color: transparent;
+    position: static;
 }
 
 .logo-white{
