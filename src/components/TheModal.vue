@@ -101,7 +101,6 @@ const emit = defineEmits(['closeModal'])
 
 .modal .title{
     color: #20335d;
-    text-align: center;
     
 }
 
@@ -134,12 +133,12 @@ const emit = defineEmits(['closeModal'])
     position: absolute;
     right: 2%;
 }
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1500px){
     .modal{
         flex-direction: row;
     }
     .modal .wrapper-img img{
-        height: 100%;
+        height: fit-content;
         width: auto;
         background-color: #cacaca;
     }
