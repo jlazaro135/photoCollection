@@ -14,6 +14,7 @@ const props = defineProps({
 })
 
 const itemFaved = ref(null)
+// pruebaaa
 
 function toggleFav(e){
     e.stopPropagation()
