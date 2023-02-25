@@ -1,9 +1,11 @@
 <script setup>
+import TheFilter from './TheFilter.vue';
 import TheFigure from './TheFigure.vue';
 import TheModal from './TheModal.vue';
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 const isOpened = ref(false)
+const filterText = ref('')
 
 const data = ref({})
 
@@ -21,20 +23,34 @@ function closeModal(){
     body.removeAttribute('style')
 }
 
-
-defineProps({
+const props = defineProps({
     collection: Array,
     favorites: Array,
     isCollection: Boolean
 })
 
+const {collection, favorites, isCollection} = props
+
+const textInput = (data) => {
+    filterText.value = data;
+};
+
+const filteredImg = computed(() => {
+  return collection.filter(item => {
+    return item.title.toLowerCase().includes(filterText.value.toLowerCase()) || item.description.toLowerCase().includes(filterText.value.toLowerCase()) || item.location.toLowerCase().includes(filterText.value.toLowerCase());
+  });
+});
+
 </script>
 
 <template>
+    <TheFilter 
+    @data-emitted="textInput"
+    />
     <div class="wrapper-collection">
         <TheFigure 
-        v-for="item in isCollection ? collection : favorites"
-        :key="item.id"
+        v-for="item in isCollection ? filteredImg : favorites"
+        :key="item.id + Math.random()"
         :title="item.title"
         :src="item.src"
         :alt="item.alt"
@@ -43,6 +59,7 @@ defineProps({
         @openModal="openModal(item)"
         />
     </div>
+    <h2 v-if="filteredImg.length === 0"> No hay resultados para tu búsqueda :(</h2>
     <TheModal
     :modal="isOpened"
     :title="data.title"
@@ -71,5 +88,7 @@ defineProps({
     }
 }
 
-
+h2{
+    text-align: center;
+}
 </style>
